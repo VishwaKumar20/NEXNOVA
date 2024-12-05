@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexnova</title>
+    <link rel="stylesheet" href="ge.css">
+</head>
+<script>
+    function addToCart1() {
+        
+        alert("Hydrating Serum has been added to your cart!");
+    }
+    function addToCart2() {
+        alert("Soothing Gel Cream has been added to your cart!");
+    }
+    function addToCart3() {
+        alert("Brightening Face Mask has been added to your cart!");
+    }
+</script>
+<body>
+    <header>
+        <img src="Src/logo_main.jpg" alt="Glamore Essentials logo" class="logo" width="150" height="150" style="border-radius: 50%; border: 5px black dotted;">
+        <h1>Welcome to Nexnova</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product">
+                <img src="Src/img1.jpg" alt="MERN Stack">
+                <h3>MERN Stack</h3>
+                <p>Rapid technological growth and for innovative</p>
+                <p>Price: $90.00</p>
+                <button onclick="addToCart1()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Src/img2.jpg" alt="Product 2">
+                <h3>AR/VR</h3>
+                <p>immerses users in digital environments</p>
+                <p>Price: $17.00</p>
+                <button onclick="addToCart2()">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Src/img-3.jpg" alt="Product 3">
+                <h3>UI/UX designer</h3>
+                <p>create the user interface for an app, website, or other interactive media.</p>
+                <p>Price: $15.00</p>
+                <button onclick="addToCart3()">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p> we are dedicated to empowering individuals and communities through cutting-edge development education. Our mission is to foster innovation, creativity, and problem-solving skills by offering comprehensive programs that prepare learners for real-world challenges.
+
+                With a focus on holistic development, we provide training in personal growth, leadership, technical skills, and community engagement. Our expert instructors, state-of-the-art resources, and collaborative learning environment ensure that students not only gain knowledge but also the confidence and capability to make a meaningful impact.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nexnova. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://instagram.com">Instagram</a>, 
+            <a href="https://facebook.com">Facebook</a>, 
+            <a href="https://twitter.com">Twitter</a>.
+        </p>
+    </footer>
+</body>
+</html>
+
